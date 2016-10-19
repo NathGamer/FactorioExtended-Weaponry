@@ -8,7 +8,7 @@ data:extend(
     ingredients =
     {
       {"gun-turret", 5},
-      {"titanium-plate", 10}
+      {"titanium-alloy", 10}
     },
     result = "gun-turret-mk2"
   },
@@ -22,7 +22,7 @@ data:extend(
     ingredients =
     {
       {"laser-turret", 2},
-      {"titanium-plate", 10},
+      {"titanium-alloy", 10},
       {"processing-unit", 10},
       {"battery-equipment", 5}
     },
@@ -38,7 +38,7 @@ data:extend(
     ingredients =
     {
 	  {"copper-plate", 2},
-      {"titanium-plate", 2}
+      {"titanium-alloy", 2}
     },
     result = "shattering-bullet-magazine"
   },
@@ -50,7 +50,7 @@ data:extend(
     ingredients =
     {
 	  {"copper-plate", 2},
-      {"titanium-plate", 2}
+      {"titanium-alloy", 2}
     },
     result = "shattering-shotgun-shell"
   },
