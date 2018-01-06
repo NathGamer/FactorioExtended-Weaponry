@@ -3,7 +3,9 @@ data:extend(
   {
     type = "technology",
     name = "turrets-2",
+	icon_size = 128,
     icon = "__base__/graphics/technology/laser-turrets.png",
+    prerequisites = {"laser-turrets", "titanium-processing"},
     effects =
     {
 	  {
@@ -21,27 +23,114 @@ data:extend(
 	  {
         type = "unlock-recipe",
         recipe = "shattering-shotgun-shell"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "reinforced-stone-wall"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "reinforced-gate"
       }
     },
-    prerequisites = {"laser-turrets"},
     unit =
     {
       count = 150,
       ingredients =
       {
         {"science-pack-1", 1},
-        {"science-pack-2", 1}
+        {"science-pack-2", 1},
+        {"military-science-pack", 1}
       },
-      time = 60
+      time = 45
     },
-    order = "a-j-c"
-  }
+    order = "a-j-c-a"
+  },
+  
+  
+  {
+    type = "technology",
+    name = "iron-walls",
+	icon_size = 128,
+    icon = "__base__/graphics/technology/stone-walls.png",
+    prerequisites = {"stone-walls"},
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "iron-wall"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "iron-gate"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"military-science-pack", 1}
+      },
+      time = 45
+    },
+    order = "a-j-c-b"
+  },
+  {
+    type = "technology",
+    name = "steel-walls",
+	icon_size = 128,
+    icon = "__base__/graphics/technology/stone-walls.png",
+    prerequisites = {"iron-walls", "steel-processing"},
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "steel-wall"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "steel-gate"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1},
+        {"military-science-pack", 1}
+      },
+      time = 45
+    },
+    order = "a-j-c-c"
+  },
+  {
+    type = "technology",
+    name = "titanium-walls",
+	icon_size = 128,
+    icon = "__base__/graphics/technology/stone-walls.png",
+    prerequisites = {"steel-walls", "titanium-processing"},
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "titanium-wall"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "titanium-gate"
+      }
+    },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"science-pack-1", 2},
+        {"science-pack-2", 2},
+        {"science-pack-3", 1},
+        {"military-science-pack", 1}
+      },
+      time = 45
+    },
+    order = "a-j-c-d"
+  },
+  
 })
